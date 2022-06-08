@@ -1,3 +1,37 @@
+/* Design Tokens
+Spaces:
+8px
+16px
+24px
+32px
+48px
+64px
+96px
+128px
+
+Font:
+1rem
+1.25rem
+1.5rem
+2rem
+
+Color palette:
+Primary (green):
+hsl(160deg, 100%, 30%)
+
+Secondary (gold):
+hsl(45deg, 100%, 50%) (lighter)
+hsl(45deg, 100%, 40%) (darker)
+
+Grays:
+hsl(0deg, 0%, 0%) (black)
+hsl(0deg, 0%, 10%) (very dark)
+hsl(0deg, 0%, 30%) (dark)
+hsl(0deg, 0%, 40%) (medium)
+hsl(0deg, 0%, 60%) (light)
+hsl(0deg, 0%, 100%) (white)
+*/
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -10,3 +44,52 @@ body {
 }
 
 /* Add styles here! */
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+.title {
+  margin: 48px 0;
+}
+
+.intro-chunk {
+  margin-bottom: 32px;
+  padding: 24px;
+  width: 450px;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 72px 0;
+}
+
+.card {
+  background-color: #FFF;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  padding: 8px 24px 0;
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  margin: 0;
+  margin-left: -32px;
+  /* margin-top: 8px; */
+  padding: 16px 32px;
+  width: fit-content;
+}
+
+p {
+  font-size: 1.25rem;
+}
